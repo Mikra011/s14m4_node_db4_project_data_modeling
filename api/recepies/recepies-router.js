@@ -1,11 +1,20 @@
 const express = require('express')
-const helpers = require('./recepies-model')
+const Recipe = require('./recepies-model')
 
 const router = express.Router()
 
-router.use("*", (req, res) => {
-    res.json({ api: "works" })
-})
+router.get('/:recipe_id', (req, res, next) => {
+    Recipe.getByRecipeID(req.params.recipe_id)
+      .then(recipe => {
+        res.status(200).json(recipe)
+      })
+      .catch(next)
+  })
+
+
+
+
+
 
 router.use((err, req, res, next) => { // eslint-disable-line
     res.status(500).json({
