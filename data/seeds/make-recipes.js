@@ -15,17 +15,17 @@ const ingredients = [
 
 const steps = [
     // Spaghetti Bolognese
-    { step_description: 'Heat pan', step_number: 1, recipe_id: 1 },
-    { step_description: 'Add tomato', step_number: 2, recipe_id: 1 },
-    { step_description: 'Add spaghetti', step_number: 3, recipe_id: 1 },
+    { step_instructions: 'Heat pan', step_number: 1, recipe_id: 1 },
+    { step_instructions: 'Add tomato', step_number: 2, recipe_id: 1 },
+    { step_instructions: 'Add spaghetti', step_number: 3, recipe_id: 1 },
     // Penne Carbonara
-    { step_description: 'Heat pan', step_number: 1, recipe_id: 2 },
-    { step_description: 'Add penne', step_number: 2, recipe_id: 2 },
-    { step_description: 'Add ham and cheese', step_number: 3, recipe_id: 2 },
+    { step_instructions: 'Heat pan', step_number: 1, recipe_id: 2 },
+    { step_instructions: 'Add penne', step_number: 2, recipe_id: 2 },
+    { step_instructions: 'Add ham and cheese', step_number: 3, recipe_id: 2 },
     // Alfoldi Gulas
-    { step_description: 'Make fire', step_number: 1, recipe_id: 3 },
-    { step_description: 'Add tomato', step_number: 2, recipe_id: 3 },
-    { step_description: 'Add potato', step_number: 3, recipe_id: 3 },
+    { step_instructions: 'Make fire', step_number: 1, recipe_id: 3 },
+    { step_instructions: 'Add tomato', step_number: 2, recipe_id: 3 },
+    { step_instructions: 'Add potato', step_number: 3, recipe_id: 3 },
 ]
 
 const step_ingredients = [
